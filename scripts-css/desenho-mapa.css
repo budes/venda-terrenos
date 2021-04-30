@@ -1,0 +1,71 @@
+/* Desenho */
+.mapa-total {
+	text-align: center;
+	background-color: rgb(100, 50, 10);
+}
+
+.sessao{
+	float: left;
+}
+
+.desenho {
+	display: inline-block;
+	float: left;
+}
+
+.container {display: grid}
+
+.terreno {
+	grid-area: t;
+	border-bottom: 0.01rem solid rgb(230, 230, 230);/*rgb(60, 100, 200);*/
+	background-image: url('../imagem/chaoterreno.jpg');
+	background-size: 10rem;
+	transition: background 0.35s, color 0.35s;
+}
+
+#op2 .terreno {
+	border-bottom: none;
+}
+
+.terreno:hover{
+	background-color: none;
+	color: rgb(240, 240, 240);
+	background-image: none;
+}
+
+.rua {
+	grid-area: r;
+	background-color: black;
+	/* border: 0.001px solid rgb(230, 230, 230);*/ /*rgb(250, 50, 60);*/
+	transition: background 0.35s, color 0.35s;
+}
+
+#segunda-rua {
+	grid-area: rd;
+}
+
+#intersec {
+	grid-area: rint;
+}
+
+.rua:hover {
+	background-color: rgb(250, 50, 60);
+	color: rgb(240, 240, 240);
+}
+
+/* Opcao 1 - Desenho */
+
+#op1 .container {
+	display: grid;
+	grid-template-rows: 1.34rem;
+	grid-template-columns: 4.69rem 0.67rem;
+	grid-template-areas: 't r';
+}
+
+/* Opcao 2 - Desenho */
+#op2 .container{
+	display: grid;
+	grid-template-rows: 1.21rem 0.27rem;
+	grid-template-columns: 3.75rem 0.54rem;
+	grid-template-areas: 't r' 'rd rint';
+}
