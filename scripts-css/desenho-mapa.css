@@ -1,7 +1,9 @@
 /* Desenho */
 .mapa-total {
 	text-align: center;
-	background-color: rgb(100, 50, 10);
+	/* background-color: rgb(100, 50, 10); */
+	background-image: url('../imagem/chaomapa.jpg');
+	background-size: 10rem;
 }
 
 .sessao{
